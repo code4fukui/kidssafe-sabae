@@ -1,6 +1,6 @@
-# キッズセーフ 越前市 岡本地区 / KidsSafe for Echizen-city Okamoto
+# キッズセーフ 鯖江 / KidsSafe for Sabae
 
-- https://code4fukui.github.io/kidssafe-okamoto/
+- https://code4fukui.github.io/kidssafe-sabae/
 
 - 〇〇市〇〇地区の地域安全マップを作成して、スマホやパソコンで見られる形で共有するツールです
 - ExcelやNumbersを使ってCSVデータを編集しアップロードすることで更新できます

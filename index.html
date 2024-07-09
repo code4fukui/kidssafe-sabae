@@ -1,5 +1,9 @@
 <!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
 <script type="module">
+const sub_title = "越前市岡本地区 地域安全マップ「キッズセーフ」";
+const main_title = "ｷｯｽﾞｾｰﾌ.文化.観光ﾏｯﾌﾟ";
+const srcurl = "https://github.com/code4fukui/kidssafe-okamoto/";
+
   import { style } from "https://js.sabae.cc/stdom.js";
   import L from "https://code4sabae.github.io/leaflet-mjs/leaflet.mjs";
   import { Geo3x3 } from "https://geo3x3.com/Geo3x3.js";
@@ -104,7 +108,7 @@
     comp.style.backgroundColor = "#D74938";
     comp.style.color = "white";
     
-    document.title = "越前市岡本地区 地域安全マップ「キッズセーフ」";
+    document.title = sub_title;
 
     const header = document.createElement("header");
     header.style.height = "56px";
@@ -143,7 +147,7 @@
     header.appendChild(subtitle);
 
     const title = document.createElement("span");
-    title.textContent = "ｷｯｽﾞｾｰﾌ.文化.観光ﾏｯﾌﾟ";
+    title.textContent = main_title;
     title.style.fontSize = "24px";
     title.style.lineHeight = "1";
     title.style.fontWeight = "bold";
@@ -411,7 +415,7 @@
 
     // footer
     const links = [
-      { text: "データ編集や閲覧はGitHubで", url: "https://github.com/code4fukui/kidssafe-okamoto/" },
+      { text: "データ編集や閲覧はGitHubで", url: srcurl },
       { text: "アイコン CC BY okiku.graphic", url: "https://www.instagram.com/okame.graphic/" },
       //{ text: "アイコン（その他） by いらすとや", url: "https://www.irasutoya.com/" },
       //{ text: "下記データは、オープンデータライセンスでご利用いただけます", url: "https://github.com/code4fukui/opendata-license/" },

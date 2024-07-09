@@ -1,9 +1,2 @@
 ﻿name,fn,icon
-見守り隊,mimamori.csv,midori_obasan.png
-防犯カメラ,bouhan.csv,bohan_camera.png
-交通事故発生箇所,accident.csv,aioi_8.png
-110番の家,house110.csv,house110_icon.png
-AED,aed.csv,aed.png
-文化 ,bunka.csv,1.png
-越前和紙工房 ,workshops.csv,1.png
-岡本地区観光 ,sightseeing.csv,9.png
+吉川ナス料理が食べられるお店,https://code4fukui.github.io/yoshikawanasu/yoshikwaanasu-shop-ll.csv,yoshikawanasu.png

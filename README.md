@@ -1,63 +1,59 @@
-# キッズセーフ 鯖江 / KidsSafe for Sabae
+# KidsSafe for Sabae
 
-- https://code4fukui.github.io/kidssafe-sabae/
+This is a regional safety map tool that allows residents of the Sabae city area to create and share an interactive map on smartphones and PCs.
 
-- 〇〇市〇〇地区の地域安全マップを作成して、スマホやパソコンで見られる形で共有するツールです
-- ExcelやNumbersを使ってCSVデータを編集しアップロードすることで更新できます
-- [キッズセーフ by Code for FUKUI](https://github.com/code4fukui/kidssafe/) を使って作られています
+## Features
 
-## サイトをホーム画面に追加する方法
-◆スマホの操作が苦手な方にも、すぐにキッズセーフが閲覧できるように分かりやすい説明を作りました。
+- Create and update a regional safety map using Excel or Numbers to edit and upload CSV data
+- Built using the [KidsSafe by Code for FUKUI](https://github.com/code4fukui/kidssafe/) project
 
-・[ホーム画面登録(android）.pptx](https://github.com/code4fukui/kidssafe-okamoto/files/14518682/android.pptx)
+## Usage
 
-・[ホーム画面登録(iphone).pptx](https://github.com/code4fukui/kidssafe-okamoto/files/14518806/iphone.pptx)
+### Adding the site to your home screen
 
+For users who are not familiar with smartphone operations, clear instructions are provided on how to quickly access KidsSafe.
 
-## サイトの表示を外国語に切り替える方法
+- [Home screen registration (Android)](https://github.com/code4fukui/kidssafe-okamoto/files/14518682/android.pptx)
+- [Home screen registration (iPhone)](https://github.com/code4fukui/kidssafe-okamoto/files/14518806/iphone.pptx)
 
-◆サイトの表示を外国語に切り替えて表示したいという時の設定方法を解説してあります。
+### Changing the site language
 
-・[外国語変換方法(iphone).pptx](https://github.com/code4fukui/kidssafe-okamoto/files/14518975/iphone.pptx)
+Instructions are provided on how to switch the site display to a foreign language.
 
-## データの更新方法
+- [Foreign language conversion method (iPhone)](https://github.com/code4fukui/kidssafe-okamoto/files/14518975/iphone.pptx)
 
-1. 変更したいデータを確認する (例、[aed.csv](aed.csv))
-2. ダウンロードボタンを押し、ダウンロードする
+### Updating the data
 
-<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/053db2b7-1931-4b7c-b369-326523190d64">
+1. Identify the data you want to change (e.g., [aed.csv](aed.csv))
+2. Click the download button and download the file
+3. Edit the file in Excel
+4. For location information, use the [Latitude and Longitude Map](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82) to find the corresponding Geo3x3 code
+5. Save the Excel file
+6. Drop the edited file into the [./](./) folder and upload it
 
-3. Excelで編集する
-4. 位置情報は、「[緯度経度地図](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82)」から該当場所に動かして、Geo3x3欄に表示された文字列を項目Geo3x3にコピーする
+The changes will be reflected in about 1 minute (refresh in private mode if the cache is still being used).
 
-<img width="511" alt="image" src="https://user-images.githubusercontent.com/1715217/219602296-2d3b72ce-581a-4ba8-8c69-edbe1b95ee76.png">
+### Adding new data types
 
-5. Excelで保存する
-6. [./](./) に編集したファイルをドロップし、アップロード(Upload)する
+1. Download the [template.csv](template.csv) file and open it in Excel
+2. Add the information you want to map in the rows starting from the 2nd row (you can freely add new columns)
+3. Save the file in "CSV UTF-8 (comma separated)(.csv)" format with a file name that indicates the data type
+4. Download the [index.csv](index.csv) file and open it in Excel
+5. Add the file name, data type name, and icon file name
+6. Upload the index.csv file and the file you saved in step 3 to the [./](./) folder
 
-<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/53bdf652-f38a-47dc-8b3e-defa62f989ce">
+The changes will be reflected in about 1 minute (refresh in private mode if the cache is still being used).
 
-7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
+### Adding new icons
 
-## データ種の追加方法
+1. Prepare a PNG image approximately 100x100 pixels in size with a half-width alphanumeric file name
+2. Display the [icon](icon) folder and upload the image by dragging and dropping it
+3. Download the [index.csv](index.csv) or the data files, open them in Excel, and update the icon item to the file name
+4. Upload the edited files to the [./](./) folder
 
-1. [template.csv](template.csv)をダウンロードし、Excelで開く
-2. 2行目以降に地図に設定したい情報を記述する（項目は自由に増やせます）
-3. Excelの「ファイル」「名前を付けて保存」を選び「ファイル形式」を「CSV UTF-8(コンマ区切り)(.csv)」に変更して、データ種類がわかるような英数ファイル名で保存する
-4. [index.csv](index.csv)をダウンロードし、Excelで開く
-5. 3で保存したファイル名とデータ種類名、アイコンファイル名を記述する
-6. [./](./) にindex.csvと3で保存したファイルをドロップし、アップロード(Upload)する
-7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
+The changes will be reflected in about 1 minute (refresh in private mode if the cache is still being used).
 
-## アイコン追加方法
+## Feedback
 
-1. 大きさ100x100程度の画像を用意し、PNG形式、半角英数名で保存する（JPEGだと背景が透けません）
-2. [icon](icon)フォルダを表示し、エクスプローラーなどからドロップし、アップロード(Upload)する
-3. [index.csv](index.csv)や各データをダウンロードし、Excelで開き、icon項目を該当ファイル名に変更する
-4. 編集したファイルを [./](./) へアップロードする
-5. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
-
-## 要望などは
-
-- この地区のキッズセーフについて [Issues](../../issues)
-- キッズセーフのアプリについて [キッズセーフのIssues](https://github.com/code4fukui/kidssafe/issues)
+- For inquiries about the KidsSafe in this area, please use the [Issues](../../issues)
+- For feedback on the KidsSafe application, please use the [KidsSafe Issues](https://github.com/code4fukui/kidssafe/issues)

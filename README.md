@@ -1,5 +1,7 @@
 # KidsSafe for Sabae
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 This is a regional safety map tool that allows residents of the Sabae city area to create and share an interactive map on smartphones and PCs.
 
 ## Features

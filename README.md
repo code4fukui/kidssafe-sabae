@@ -59,3 +59,5 @@ The changes will be reflected in about 1 minute (refresh in private mode if the 
 
 - For inquiries about the KidsSafe in this area, please use the [Issues](../../issues)
 - For feedback on the KidsSafe application, please use the [KidsSafe Issues](https://github.com/code4fukui/kidssafe/issues)
+
+MIT License — see [LICENSE](LICENSE).
